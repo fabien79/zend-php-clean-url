@@ -65,7 +65,7 @@ class Generator {
         $sql = sprintf('SELECT 1 FROM `%s` WHERE `%s` = %s',
                        $tableName,
                        $tableField,
-                       $this->_db->escape($uristubToCheck));
+                       $this->_db->quote($uristubToCheck));
         
         try {
             $result = $this->_db->query($sql)->fetch();
