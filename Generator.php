@@ -79,7 +79,7 @@ class Generator {
         
         // increment iteration before trying again
         $iteration = (is_null($iteration)) ? 1 : ++$iteration;
-        return $this->_generateUristub($tableName, $tableField, $uristub, $iteration);
+        return $this->generateUristub($tableName, $tableField, $uristub, $length, $iteration);
     }
 
 }
